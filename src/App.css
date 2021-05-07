@@ -10,7 +10,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --primaryColor: #0000ff;
     --mainWhite: #fff;
@@ -23,7 +22,6 @@ body {
     --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
     --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
 
 /* globals */
 
@@ -87,7 +85,6 @@ h6 {
     text-transform: uppercase;
     cursor: pointer;
 }
-
 .btn-primary:hover {
     text-decoration: none;
     background: transparent!important;
@@ -196,7 +193,7 @@ input[type=number]:focus,
 }
 
 
-/* end of navbar */
+/* Fin de la barra de navegación */
 
 
 /* Hero */
@@ -286,10 +283,10 @@ input[type=number]:focus,
 }
 
 
-/* End of Banner */
+/* Fin del Banner */
 
 
-/* Title */
+/* Titulo */
 
 .section-title {
     text-align: center;
@@ -311,10 +308,10 @@ input[type=number]:focus,
 }
 
 
-/* end of Title */
+/* fin del titulo */
 
 
-/* services */
+/* servicios */
 
 .services {
     padding: 3rem 0;
@@ -370,10 +367,10 @@ input[type=number]:focus,
 }
 
 
-/*end of services */
+/* fin de los servicios */
 
 
-/* featured rooms */
+/* rooms */
 
 .featured-rooms {
     padding: 5rem 0;
@@ -555,7 +552,7 @@ input[type=number]:focus,
 /* end of single room*/
 
 
-/* roomlist */
+/* lista rooms */
 
 .roomslist {
     padding: 5rem 0;
@@ -587,7 +584,7 @@ input[type=number]:focus,
 /* end of roomlist */
 
 
-/*  rooms fitler*/
+/*  filtro*/
 
 
 /* .filter-container {
@@ -610,10 +607,10 @@ input[type=number]:focus,
 }
 
 
-/* end of rooms fitler*/
+/* final del filtraje*/
 
 
-/* aboutus */
+/* sobre nosotros */
 
 .aboutus,
 .contact {
@@ -640,7 +637,7 @@ input[type=number]:focus,
 }
 
 
-/* end of about us */
+/* fin de sobre nosotros */
 
 .fondo {
     background-color: #000 !important;
