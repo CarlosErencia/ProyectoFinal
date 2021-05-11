@@ -656,6 +656,25 @@ input[type=number]:focus,
     justify-content: center;
     margin-top: 10%;
     display: flex;
+    padding: 50px;
+    margin-left: 750px;
+    max-width: 450px;
+    background-color: #E7E7E7;
+}
+
+.placeholder{
+    margin-left: 20px;
+}
+
+.boton{
+    background-color: #046193;
+    display: block;
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
 }
 
 .login>div {

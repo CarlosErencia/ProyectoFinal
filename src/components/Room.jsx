@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import {Link} from 'react-router-dom';
 import defaultImg from '../images/room-1.jpeg';
 import PropTypes from 'prop-types';
@@ -14,7 +13,7 @@ export default function Room({room}) {
                 <img src={images[0] || defaultImg} alt="single room" className="img-fluid"/>
                 <div className="price-top">
                     <h6>Euros {price}</h6>
-                    <p>per night</p>
+                    <p>por noche</p>
                 </div>
                 <Link to={`/rooms/${slug}`} className="btn-warning room-link text-center" >Features</Link>
               <p className="room-info">{name}</p>
@@ -22,14 +21,6 @@ export default function Room({room}) {
         </div>
     )
 }
- componentDidMount(){
-     axios.get(`http://localhost:4000/api/todos/`)
-     .then(res=> {
-         const room = res.data;
-         this.setState({room});
-         console.log(res.data);
-     })
- }
  
 Room.propTypes = {
     room: PropTypes.shape({
