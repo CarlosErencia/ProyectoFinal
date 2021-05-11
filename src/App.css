@@ -662,9 +662,44 @@ input[type=number]:focus,
     background-color: #E7E7E7;
 }
 
-.placeholder{
+.textarea{
     margin-left: 20px;
-}
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+  }
+
+  .textareaDos{
+    margin-left: 39px;
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+  }
 
 .boton{
     background-color: #046193;
@@ -674,47 +709,18 @@ input[type=number]:focus,
 	border: 0;
 	font-size: 1em; 
 	color: 	white;
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 47%;
+    left: 53%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
 }
 
-/*.boton_personalizado{
-        text-decoration: none;
-        padding: 25px;
-        font-weight: 450;
-        font-size: 15px;
-        color: #ffffff;
-        background-color: #1883ba;
-        border-radius: 2px;
-        border: 1px solid #0016b0;
-}
 
-.boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }*/
-
-  /*.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-    box-sizing: border-box;
-  }
-
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-  }*/
 .form-container {
   max-width: 300px;
   padding: 10px;
@@ -728,6 +734,11 @@ input[type=number]:focus,
     border: none;
     background: #f1f1f1;
 }
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
 
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: #ddd;
