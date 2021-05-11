@@ -703,7 +703,7 @@ input[type=number]:focus,
 
 .boton{
     background-color: #046193;
-    display: block;
+    display: flex;
 	background-color: #0095eb;
 	padding: 10px 45px 10px 45px;
 	border: 0;
@@ -712,14 +712,13 @@ input[type=number]:focus,
     font-family: "Roboto", sans-serif;
     border-radius: 5px;
     margin-bottom: 10px;
-    position: absolute;
-    top: 47%;
+    position: relative;
+    top: 15%;
     left: 53%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     
 }
-
 
 .form-container {
   max-width: 300px;
