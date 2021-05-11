@@ -662,6 +662,10 @@ input[type=number]:focus,
     background-color: #E7E7E7;
 }
 
+.placeholder{
+    margin-left: 20px;
+}
+
 .boton{
     background-color: #046193;
     display: block;
