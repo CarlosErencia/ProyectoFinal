@@ -33,9 +33,19 @@ const Login = () => {
             icon="fa-facebook" 
           />
          </div>
-         <div class="boton_personalizado">
-         <a>Registro Manual</a>
-          </div>
+         <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+          <h1>Registro Manual</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required></input>
+
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required></input>
+
+          <button type="submit" class="btn">Aceptar</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Cancelar</button>
+        </form>
         </div>
         </div>
     )
