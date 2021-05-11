@@ -677,6 +677,22 @@ input[type=number]:focus,
   font-family: "Roboto", sans-serif;
 }
 
+.boton_personalizado{
+        text-decoration: none;
+        padding: 25px;
+        font-weight: 450;
+        font-size: 15px;
+        color: #ffffff;
+        background-color: #1883ba;
+        border-radius: 2px;
+        border: 1px solid #0016b0;
+}
+
+.boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
 .login>div {
     margin: 15px;
 }
