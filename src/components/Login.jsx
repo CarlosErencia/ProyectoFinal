@@ -33,6 +33,10 @@ const Login = () => {
             icon="fa-facebook" 
           />
          </div>
+         <div class="boton_personalizado">
+         <a>Registro Manual</a>
+          </div>
+        </div>
         </div>
     )
   }
