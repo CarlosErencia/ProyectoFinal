@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import '.style/FormContacto.css'
 const FormContacto = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
