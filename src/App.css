@@ -761,3 +761,25 @@ input[type=number]:focus,
 .Mapa {
     margin-top: 5%;
 }
+
+.Applogin{
+    align-content: center;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+}
+.BotonesLogin{
+    justify-content: center;
+    display: flex;
+}
+
+/* .Google{
+    border: #000 solid 1px;
+}
+.containerLogin{
+    border: #000 solid 1px;
+}
+.facebook{
+    border: #000 solid 1px;
+    margin: 0%;
+} */
