@@ -24,7 +24,7 @@ const Login = () => {
   // signInButton.addEventListener('click', () => {
   //   container.classList.remove("right-panel-active");
   // });
-
+  
     return (
        <div className="Applogin">
          <div class="BotonesLogin">
@@ -51,12 +51,12 @@ const Login = () => {
           <div class="containerLogin" id="container">
             <div class="form-container sign-up-container">
               <form action="#">
-                <h1>Create Account</h1>
+                <h1>Registrate</h1>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Nombre" />
                 <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input type="password" placeholder="Contraseña" />
+                <button>Registrate</button>
               </form>
             </div>
             <div class="form-container sign-in-container">
@@ -77,9 +77,9 @@ const Login = () => {
                   <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                  <h1>Hello, Friend!</h1>
-                  <p>Enter your personal details and start journey with us</p>
-                  <button class="ghost" id="signUp">Sign Up</button>
+                  <h1>Hola, Amig@ !</h1>
+                  <p>Ingrese sus datos personales y comience su viaje con nosotros</p>
+                  <button class="ghost" id="signUp">Registrarse</button>
                 </div>
               </div>
             </div>
