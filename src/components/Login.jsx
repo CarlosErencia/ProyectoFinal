@@ -2,6 +2,7 @@ import React from 'react'
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import './style/Login.css'
+import PersonList from '../../src/PersonList'
 
 const Login = () => {
 
@@ -83,7 +84,8 @@ const Login = () => {
                 </div>
               </div>
             </div>
-          </div>    
+          </div> 
+            <PersonList></PersonList>
         </div>
     )
   }
