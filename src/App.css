@@ -652,16 +652,6 @@ input[type=number]:focus,
     margin-bottom: 8%;
 }
 
-.login {
-    justify-content: center;
-    margin-top: 10%;
-    display: flex;
-    padding: 50px;
-    margin-left: 750px;
-    max-width: 450px;
-    background-color: #E7E7E7;
-}
-
 .textarea{
     margin-left: 20px;
     border: 1px solid #DBE1EB;
@@ -762,11 +752,6 @@ input[type=number]:focus,
   .form-container .cancel {
     background-color: red;
   }
-
-
-.login>div {
-    margin: 15px;
-}
 
 .form {
     justify-content: center;
