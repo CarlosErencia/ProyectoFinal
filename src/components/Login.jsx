@@ -61,12 +61,12 @@ const Login = () => {
             </div>
             <div class="form-container sign-in-container">
               <form action="#">
-                <h1>Sign in</h1>
-                <span>or use your account</span>
+                <h1>Iniciar Sesion</h1>
+                <span>Introduce los datos</span>
                 <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <input type="password" placeholder="Contraseña" />
+                <a href="#">No recuerdas la contraaseña?</a>
+                <button>Iniciar Sesion</button>
               </form>
             </div>
             <div class="overlay-container">
