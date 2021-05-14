@@ -11,7 +11,10 @@ const Login = () => {
   }
 
   const responseGoogle = (response) => {
-    console.log(response);
+    console.log(response.gt.Ue);
+    let name = response.gt.Ue;
+    alert('Hola ' +name);
+
   }
 
   // const signUpButton = document.getElementById('signUp');
