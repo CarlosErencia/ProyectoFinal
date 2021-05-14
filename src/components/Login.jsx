@@ -2,6 +2,8 @@ import React from 'react'
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import './style/Login.css'
+import PersonList from '../../src/PersonList'
+import swal from 'sweetalert';
 
 const Login = () => {
 
@@ -10,7 +12,15 @@ const Login = () => {
   }
 
   const responseGoogle = (response) => {
-    console.log(response);
+    console.log(response.gt.Ue);
+    let name = response.gt.Ue;
+    swal({
+      title: 'Bienvenido ' +name,
+      text: "Ya puedes disfrutar de todas nuestras ofertas!",
+      icon: "success",
+      button: "Aceptar"
+    });
+
   }
 
   // const signUpButton = document.getElementById('signUp');
@@ -84,7 +94,7 @@ const Login = () => {
               </div>
             </div>
           </div> 
-            
+            <PersonList></PersonList>
         </div>
     )
   }
