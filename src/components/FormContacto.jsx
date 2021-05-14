@@ -22,22 +22,26 @@ const FormContacto = () => {
     alert(result.status);
   };
   return (
-      <div class="login">
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="Nombre">Nombre:</label>
-                    <input class="textarea" type="text" id="Nombre" required />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input class="textareaDos" type="email" id="email" required />
-                </div>
-                <div>
-                    <label htmlFor="Mensaje">Mensaje:</label>
-                    <textarea class="textarea" id="Mensaje" required />
-                </div>
-                <button class="boton" type="submit">{status}</button>
-            </form>
+     <div class="formContacto">
+        <form action="#" target="" method="get" name="formDatosPersonales">
+
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder=""/>
+
+          <label for="apellidos">Apellidos</label>
+          <input type="text" name="apellidos" id="apellidos" placeholder=""/>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="" required />
+
+          <label for="asunto">Asunto</label>
+          <input type ="text" name="asunto" id="asunto" placeholder=""/>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" for="mensaje" placeholder="Máximo 300 caracteres" maxlength="300"></textarea>
+
+          <input type="submit" name="enviar" value="Enviar datos"></input>
+        </form>
       </div>
     
   );
