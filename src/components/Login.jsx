@@ -1,12 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import './style/Login.css'
-import PersonList from '../../src/PersonList'
 import swal from 'sweetalert';
 
 const Login = () => {
+  useEffect(() => {
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('containerLogin');
 
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+  }, [])
   const responseFacebook = (response) => {
     console.log(response);
   }
@@ -23,18 +34,6 @@ const Login = () => {
 
   }
 
-  // const signUpButton = document.getElementById('signUp');
-  // const signInButton = document.getElementById('signIn');
-  // const container = document.getElementById('containerLogin');
-
-  // signUpButton.addEventListener('click', () => {
-  //   container.classList.add("right-panel-active");
-  // });
-
-  // signInButton.addEventListener('click', () => {
-  //   container.classList.remove("right-panel-active");
-  // });
-  
     return (
        <div className="Applogin">
          <div class="BotonesLogin">
@@ -94,7 +93,6 @@ const Login = () => {
               </div>
             </div>
           </div> 
-            <PersonList></PersonList>
         </div>
     )
   }
