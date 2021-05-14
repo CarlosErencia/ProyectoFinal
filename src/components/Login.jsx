@@ -3,6 +3,7 @@ import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import './style/Login.css'
 import PersonList from '../../src/PersonList'
+import swal from 'sweetalert';
 
 const Login = () => {
 
@@ -13,7 +14,12 @@ const Login = () => {
   const responseGoogle = (response) => {
     console.log(response.gt.Ue);
     let name = response.gt.Ue;
-    alert('Hola ' +name);
+    swal({
+      title: 'Bienvenido ' +name,
+      text: "Ya puedes disfrutar de todas nuestras ofertas!",
+      icon: "success",
+      button: "Aceptar"
+    });
 
   }
 
