@@ -8,7 +8,7 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:4000/api/todos`)
+    axios.get(`http://192.168.210.150:4000/api/todos`)
       .then(res => {
         const persons = res.data;
         console.log(res.data);
@@ -21,10 +21,20 @@ export default class PersonList extends React.Component {
 
   render() {
     return (
+    
       <ul>
         { this.state.persons.map(person => <li>{person.name}</li>)}
+        { this.state.persons.map(person => <li>{person.slug}</li>)}
+        { this.state.persons.map(person => <li>{person.type}</li>)}
+        { this.state.persons.map(person => <li>{person.price}</li>)}
+        { this.state.persons.map(person => <li>{person.size}</li>)}
+        { this.state.persons.map(person => <li>{person.capacity}</li>)}
+        { this.state.persons.map(person => <li>{person.pets}</li>)}
+        { this.state.persons.map(person => <li>{person.breakfast}</li>)}
+        { this.state.persons.map(person => <li>{person.featured}</li>)}
+        { this.state.persons.map(person => <li>{person.description}</li>)}
+        { this.state.persons.map(person => <li>{person.extras}</li>)}
       </ul>
     )
   }
 }
-//prova
