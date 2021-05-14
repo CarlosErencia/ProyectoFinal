@@ -710,7 +710,7 @@ input[type=number]:focus,
     
 }
 
-.formContacto {
+/* .formContacto {
     width:350px;
 	padding:15px;
 	border-radius:10px;
@@ -749,7 +749,7 @@ form input[type="submit"]{
 
 form input[type="submit"]:hover{
 	cursor:pointer;
-}
+} */
 
 textarea{
 	width:100%;
@@ -762,7 +762,7 @@ textarea{
 	resize:none;
 	display:block;
 }
-
+/* 
 .form-container {
   max-width: 300px;
   padding: 10px;
@@ -806,10 +806,10 @@ textarea{
     background-color: red;
   }
 
-.form {
+/* .form {
     justify-content: center;
     text-align: center;
-}
+} */ */
 
 .Mapa {
     margin-top: 5%;
@@ -826,13 +826,3 @@ textarea{
     display: flex;
 }
 
-/* .Google{
-    border: #000 solid 1px;
-}
-.containerLogin{
-    border: #000 solid 1px;
-}
-.facebook{
-    border: #000 solid 1px;
-    margin: 0%;
-} */
