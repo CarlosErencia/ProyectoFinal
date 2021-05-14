@@ -6,7 +6,6 @@ context.js
 data.js
 
 Banner.jsx
-Hero.jsx
 RoomsContainer.jsx
 RoomsList.jsx
 StyledHero.jsx

@@ -652,34 +652,106 @@ input[type=number]:focus,
     margin-bottom: 8%;
 }
 
-.login {
-    justify-content: center;
-    margin-top: 10%;
-    display: flex;
-    padding: 50px;
-    margin-left: 750px;
-    max-width: 450px;
-    background-color: #E7E7E7;
-}
-
-.placeholder{
+.textarea{
     margin-left: 20px;
-}
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+  }
+
+  .textareaDos{
+    margin-left: 39px;
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+  }
 
 .boton{
     background-color: #046193;
-    display: block;
+    display: flex;
 	background-color: #0095eb;
 	padding: 10px 45px 10px 45px;
 	border: 0;
 	font-size: 1em; 
 	color: 	white;
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15%;
+    left: 53%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
 }
 
-.login>div {
-    margin: 15px;
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
 }
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .form-container .cancel {
+    background-color: red;
+  }
 
 .form {
     justify-content: center;
@@ -689,3 +761,25 @@ input[type=number]:focus,
 .Mapa {
     margin-top: 5%;
 }
+
+.Applogin{
+    align-content: center;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+}
+.BotonesLogin{
+    justify-content: center;
+    display: flex;
+}
+
+/* .Google{
+    border: #000 solid 1px;
+}
+.containerLogin{
+    border: #000 solid 1px;
+}
+.facebook{
+    border: #000 solid 1px;
+    margin: 0%;
+} */

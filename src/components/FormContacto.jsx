@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import '.style/FormContacto.css'
 const FormContacto = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
@@ -27,15 +26,15 @@ const FormContacto = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" required />
+                    <input class="textarea" type="text" id="Nombre" required />
                 </div>
                 <div>
                     <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" required />
+                    <input class="textareaDos" type="email" id="email" required />
                 </div>
                 <div>
                     <label htmlFor="Mensaje">Mensaje:</label>
-                    <textarea id="Mensaje" required />
+                    <textarea class="textarea" id="Mensaje" required />
                 </div>
                 <button class="boton" type="submit">{status}</button>
             </form>
