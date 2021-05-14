@@ -8,7 +8,7 @@ const Login = () => {
   useEffect(() => {
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
+    const container = document.getElementById('containerlogin');
 
     signUpButton.addEventListener('click', () => {
       container.classList.add("right-panel-active");
@@ -57,7 +57,7 @@ const Login = () => {
          </div>
         
          </div>
-          <div class="container" id="container">
+          <div class="containerlogin" id="containerlogin">
             <div class="form-container sign-up-container">
               <form action="#">
                 <h1>Registrate</h1>
