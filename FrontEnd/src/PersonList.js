@@ -8,7 +8,7 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://192.168.210.150:4000/api/todos`)
+    axios.get(`http://localhost:4000/api/todos`)
       .then(res => {
         const persons = res.data;
         console.log(res.data);
