@@ -1,6 +1,12 @@
 # Projecte final
 
-## Gerard Chicote, Joel Rodriguez, Carlos Erencia, Jordi Cervera
+## Gerard Chicote, Joel Rodriguez, Carlos Erencia, Jordi Cervera, Marti Rabella
+
+## Instalacion
+Lanzar Api:
+* `cd BackEnd`
+* `npm install`
+* `npm start`
 
 In the project directory, you can run:
 
