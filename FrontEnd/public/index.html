@@ -11,11 +11,50 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Hotel BoatKing</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div id="div-cookies" style="display: none;">
+        Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso.
+        <button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+        Aceptar
+        </button>
+
+    </div>
+
+    <style>
+        #div-cookies {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0px -5px 15px gray;
+            padding: 7px;
+            text-align: center;
+            z-index: 99;
+        }
+        </style>
+        
     <noscript>Porfavor Habilita JavaScript para poder correr la Aplicacion.</noscript>
     <div id="root"></div>
+
+    <script>
+        function checkAcceptCookies() {
+            if (localStorage.acceptCookies == 'true') {} else {
+                $('#div-cookies').show();
+            }
+        }
+        
+        function acceptCookies() {
+            localStorage.acceptCookies = 'true';
+            $('#div-cookies').hide();
+        }
+        $(document).ready(function() {
+            checkAcceptCookies();
+        });
+        </script>
 </body>
 
 </html>
