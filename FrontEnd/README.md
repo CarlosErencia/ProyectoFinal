@@ -2,6 +2,12 @@
 
 ## Gerard Chicote, Joel Rodriguez, Carlos Erencia, Jordi Cervera
 
+## Instalacion
+Lanzar Api:
+* `cd BackEnd`
+* `npm install`
+* `npm start`
+
 In the project directory, you can run:
 
 ### `npm start`
