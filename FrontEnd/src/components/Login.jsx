@@ -88,9 +88,9 @@ const Login = () => {
             <div class="overlay-container">
               <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                  <h1>Welcome Back!</h1>
-                  <p>To keep connected with us please login with your personal info</p>
-                  <button class="ghost" id="signIn">Sign In</button>
+                  <h1>Bienvenido !!</h1>
+                  <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                  <button class="ghost" id="signIn">Iniciar Sesion</button>
                 </div>
                 <div class="overlay-panel overlay-right">
                   <h1>Hola, Amig@ !</h1>
