@@ -4,12 +4,16 @@ import FormContacto from '../components/FormContacto'
 
 const Contact = () => {
 return (
-    <div>
+    <div class="MapaContacto">
+        <div class="FormularioContacto">
         <FormContacto>
         </FormContacto>
-
-        <Mapa>   
+        </div>
+        <div class="Mapa">
+        <Mapa>
+           
         </Mapa>
+        </div>
     </div>
    
 )
