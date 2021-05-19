@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import './style/FormContacto.css';
+
 const FormContacto = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
@@ -22,28 +24,32 @@ const FormContacto = () => {
     alert(result.status);
   };
   return (
-     <div class="formContacto">
-        <form action="#" target="" method="get" name="formDatosPersonales">
-
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" placeholder=""/>
-
-          <label for="apellidos">Apellidos</label>
-          <input type="text" name="apellidos" id="apellidos" placeholder=""/>
-
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="" required />
-
-          <label for="asunto">Asunto</label>
-          <input type ="text" name="asunto" id="asunto" placeholder=""/>
-
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" for="mensaje" placeholder="Máximo 300 caracteres" maxlength="300"></textarea>
-
-          <input type="submit" name="enviar" value="Enviar datos"></input>
-        </form>
-      </div>
-    
+    <div class="containercontacto">
+    <h1 class="tituloform">Contacta con nosotros!</h1>
+    <form>
+        <ul>
+            <li>
+                <label for="name"><span>Nombre: <span class="required-star">*</span></span></label>
+                <input type="text" id="name" name="user_name" required></input>
+            </li>
+            <li>
+                <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+                <input type="email" id="mail" name="user_email" required></input>
+            </li>
+            <li>
+                <label for="mail"><span>Asunto: <span class="required-star">*</span></span></label>
+                <input type="text" id="asunto" name="user_asunto" required></input>
+            </li>
+            <li>
+                <label for="msg"><span>Mensaje: <span class="required-star">*</span></span></label>
+                <textarea rows="4" cols="50"></textarea>
+            </li>
+            <li>
+                <input type="submit"></input>
+            </li>
+        </ul>
+    </form>
+</div>
   );
 };
 
