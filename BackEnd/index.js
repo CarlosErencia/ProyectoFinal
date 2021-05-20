@@ -15,6 +15,7 @@ var express = require('express'),
 var roomRoutes = require("./routes/rooms");
 var installationRoutes = require("./routes/installation");
 var serviceRoutes = require("./routes/services");
+var restaurantRoutes = require("./routes/restaurant");
 
 //Configuración de middleware de Express
 app.use(bodyParser.json());
@@ -41,6 +42,7 @@ app.get('/', function(req, res){
 app.use('/api/rooms', roomRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/installations', installationRoutes);
+app.use('/api/restaurants', restaurantRoutes);
 
 //Arrancamos el servidor NODE.JS via la aplicacion express
 app.listen(port, function(){
