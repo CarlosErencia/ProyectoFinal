@@ -6,4 +6,4 @@ mongoose.connect('mongodb://localhost/todo-api');
 //Habilitamos el uso de Promises para las llamadas a Mongo
 mongoose.Promise = Promise;
 
-module.exports.Todo = require("./todo");
+module.exports.Room = require("./room");

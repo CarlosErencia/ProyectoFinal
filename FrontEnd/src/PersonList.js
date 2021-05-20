@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 //import defaultImg from 'src/images/room-1.jpeg';
 
-
 import axios from 'axios';
 
 export default class PersonList extends React.Component {
@@ -11,7 +10,7 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:4000/api/todos`)
+    axios.get(`http://localhost:4000/api/rooms`)
       .then(res => {
         const persons = res.data;
         console.log(res.data);
@@ -24,7 +23,6 @@ export default class PersonList extends React.Component {
 
   render() {
     return (
-    
       <ul>
         { this.state.persons.map(person => 
                   <div>
