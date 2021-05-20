@@ -3,12 +3,18 @@ import {NavLink} from 'react-router-dom';
 import { FaAlignRight } from 'react-icons/fa';
 import jquery from 'jquery';
 
+import LogoutButton from './logout-button';
+import LoginButton from './login-button';
+import { useAuth0 } from '@auth0/auth0-react';
+
 // for changing navbar  color
 jquery(window).scroll(function() {
 jquery('nav').toggleClass('scrolled', jquery(this).scrollTop() > 0);
 })
 
+
 const Navbar = () => {
+    const { isAuthenticated } = useAuth0();
     return (
     <>
         <nav className="navbar navbar-expand-sm navbar-dark  py-2 fixed-top fondo">
@@ -29,9 +35,15 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" activeClassName="active_class" exact to="/contact">Contacto</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" activeClassName="active_class" exact to="/login">Login</NavLink>
-                        </li>
+                        {isAuthenticated ?
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active_class" exact to="/login"><LogoutButton/></NavLink>
+                            </li>
+                            :
+                            <li className="nav-item">
+                                <NavLink className="nav-link" activeClassName="active_class" exact to="/login"><LoginButton/></NavLink>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
