@@ -13,6 +13,8 @@ var express = require('express'),
 
 //Las rutas de nuestra aplicación estan definidas en el directorio routes, en el fichero todos.js
 var roomRoutes = require("./routes/rooms");
+var installationRoutes = require("./routes/installation");
+var serviceRoutes = require("./routes/services");
 
 //Configuración de middleware de Express
 app.use(bodyParser.json());
@@ -36,7 +38,9 @@ app.get('/', function(req, res){
 });
 
 //Definimos el prefijo para nuestras rutas
-app.use('/api/', roomRoutes);
+app.use('/api/rooms', roomRoutes);
+app.use('/api/services', serviceRoutes);
+app.use('/api/installations', installationRoutes);
 
 //Arrancamos el servidor NODE.JS via la aplicacion express
 app.listen(port, function(){

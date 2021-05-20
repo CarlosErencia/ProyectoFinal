@@ -52,18 +52,6 @@ exports.deleteRoom = function(req, res){
         res.send(err);
     })
  }
-
- /* ---------------------------------------- SERVICIOS ----------------------------------------------------*/
-
-exports.getServices = function(req, res){
-    db.Service.find()
-    .then(function(rooms){
-        res.json(rooms);
-    })
-    .catch(function(err){
-        res.send(err);
-    })
-}
-
+ 
 
 module.exports = exports;
