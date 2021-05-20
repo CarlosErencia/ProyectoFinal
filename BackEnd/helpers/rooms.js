@@ -43,6 +43,16 @@ exports.updateRoom =  function(req, res){
    })
 }
 
+exports.deleteRoom = function(req, res){
+    db.Room.remove({_id: req.params.roomId}) 
+    .then(function(){
+        res.json({message: 'We deleted it!'});
+    })
+    .catch(function(err){
+        res.send(err);
+    })
+ }
+
  /* ---------------------------------------- SERVICIOS ----------------------------------------------------*/
 
 exports.getServices = function(req, res){
