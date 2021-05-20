@@ -14,40 +14,28 @@ import Contact from './pages/Contact';
 import Booknow from './pages/Booknow';
 
 function App() {
-    return ( <
-        div className = "App" >
-        <
-        BrowserRouter >
-        <
-        Navbar / >
-        <
-        Switch >
-        <
-        Route exact path = "/"
-        component = { Home }
-        /> <
-        Route exact path = "/contact"
-        component = { Contact }
-        /> <
-        Route exact path = "/login"
-        component = { Login }
-        /> <
-        Route exact path = "/rooms/"
-        component = { Rooms }
-        /> <
-        Route exact path = "/rooms/:slug"
-        component = { SingleRoom }
-        /> <
-        Route exact path = "/booknow/:slug"
-        component = { Booknow }
-        /> <
-        Route component = { Error }
-        /> < /
-        Switch > <
-        Footer / >
-        <
-        /BrowserRouter> < /
-        div >
+    return ( 
+        <div className = "App" >
+            <BrowserRouter >
+            <Navbar/>
+            <Switch >
+            <Route exact path = "/"
+            component = { Home }/> 
+            <Route exact path = "/contact"
+            component = { Contact }/> 
+            <Route exact path = "/login"
+            component = { Login }/>
+            <Route exact path = "/rooms/"
+            component = { Rooms }/>
+            <Route exact path = "/rooms/:slug"
+            component = { SingleRoom }/>
+            <Route exact path = "/booknow/:slug"
+            component = { Booknow }/>
+            <Route component = { Error }/>
+            </Switch>
+            <Footer/>
+            </BrowserRouter>
+        </div>
     );
 }
 
