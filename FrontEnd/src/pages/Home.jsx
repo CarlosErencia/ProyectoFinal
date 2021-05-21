@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import FeaturedRooms from '../components/FeaturedRooms';
 import Servicios from '../components/Servicios';
 import Installations from '../components/Installations'
+import Restaurants from '../components/Restaurants'
 
 export default function Home() {
     return (
@@ -21,7 +22,7 @@ export default function Home() {
         <Servicios/>
         <FeaturedRooms/>
         <Installations/>
-       
+        <Restaurants/>
         </>
 
     )

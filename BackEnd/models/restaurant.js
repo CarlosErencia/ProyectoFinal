@@ -7,9 +7,29 @@ var mongoose = require('mongoose');
 var restaurantSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: 'Name cannot be blank!'
+        required: 'No puede estar en blanco !'
+    },
+    price:{
+        type: Number,
+        required: 'No puede estar en blanco !'
+    },
+    restauranthours:{
+        type: String,
+        required: 'No puede estar en blanco !'
+    },
+    numberPhone:{
+        type: Number,
+        required: 'No puede estar en blanco !'
     },
     description:{
+        type: String,
+        default: ''
+    },
+    persons:{
+        type: Number,
+        default: ''
+    },
+    image:{
         type: String,
         default: ''
     }
