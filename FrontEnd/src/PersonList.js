@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-//import defaultImg from 'src/images/room-1.jpeg';
-
 import axios from 'axios';
 
 export default class PersonList extends React.Component {
@@ -10,14 +8,14 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:4000/api/rooms`)
+    axios.get(`http://34.226.202.240:4000/api/rooms`)
       .then(res => {
         const persons = res.data;
         console.log(res.data);
         this.setState({ persons });
 
       }).catch(function (){
-          console.error("tdfghkkjg")
+          console.error("NO se ha podido cargar la habitacion")
       })
   }
 
@@ -28,12 +26,12 @@ export default class PersonList extends React.Component {
                   <div>
                   <div className="col-md-4 col-12 mx-auto p-2">
                   <div className="card shadow-lg border-0 room">
-                  {/* <img src={person.images[0] || defaultImg} alt="single room" className="img-fluid"/> */}
+                  <img width="450" src={person.images} alt="single room" className="img-fluid"/>
                       <div className="price-top">
                           <h6>{person.price}€</h6>
                           <p>la noche</p>
                       </div>
-                      <Link to={`/rooms/${person.slug}`} className="btn-warning room-link text-center" >Features</Link>
+                      <Link to={`/rooms/${person.slug}`} className="btn-warning room-link text-center" >Mas Informacion</Link>
                     <p className="room-info">{person.name}</p>
                   </div>
               </div>

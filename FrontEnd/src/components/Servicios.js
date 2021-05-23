@@ -30,7 +30,7 @@ export default class Servicios extends Component {
                     <div className="col-md-4 col-lg-3 col-12 mx-auto my-3" key={index}>
                         <div className="card shadow-lg border-0 p-4">
                             <article className="service">
-                            <span>{person.imagen}</span>
+                            <img width="250" src={person.image}></img>
                             <h6>{person.name}</h6>
                             <p>{person.description}</p>
                             </article>              
