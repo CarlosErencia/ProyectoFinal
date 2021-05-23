@@ -35,15 +35,12 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" activeClassName="active_class" exact to="/contact">Contacto</NavLink>
                         </li>
-                        {isAuthenticated ?
                             <li className="nav-item">
                                 <NavLink className="nav-link" activeClassName="active_class" exact to="/login"><LogoutButton/></NavLink>
                             </li>
-                            :
                             <li className="nav-item">
                                 <NavLink className="nav-link" activeClassName="active_class" exact to="/login"><LoginButton/></NavLink>
                             </li>
-                        }
                     </ul>
                 </div>
             </div>

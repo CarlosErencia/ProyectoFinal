@@ -20,7 +20,6 @@
         <button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
         Aceptar
         </button>
-
     </div>
 
     <style>
@@ -45,8 +44,7 @@
             if (localStorage.acceptCookies == 'true') {} else {
                 $('#div-cookies').show();
             }
-        }
-        
+        }     
         function acceptCookies() {
             localStorage.acceptCookies = 'true';
             $('#div-cookies').hide();
