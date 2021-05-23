@@ -12,7 +12,12 @@ var installationSchema = new mongoose.Schema({
     description:{
         type: String,
         default: ''
+    },
+    image:{
+        type: String,
+        default: ''
     }
+
 });
 
 //Creo un modelo mongoose especificando el nombre del modelo, el modelo en si y el nombre

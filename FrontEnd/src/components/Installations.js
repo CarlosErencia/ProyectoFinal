@@ -9,7 +9,7 @@ export default class Servicios extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://192.168.210.150:4000/api/installations`)
+    axios.get(`http://34.226.202.240:4000/api/installations`)
       .then(res => {
         const persons = res.data;
         console.log(res.data);

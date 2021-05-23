@@ -12,6 +12,10 @@ var servicioSchema = new mongoose.Schema({
     description:{
         type: String,
         default: ''
+    },
+    image:{
+        type: String,
+        default: '' 
     }
 });
 
