@@ -4,22 +4,22 @@ import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../context';
 import StyledHero from '../components/StyledHero';
-import axios from 'axios';
 
 export default class SingleRoom extends Component {
-    constructor (props){
-        super(props);
-        this.state = {
-            slug: this.props.match.params.slug,
-            defaultBcg
-        };
-    }
     state = {
         persons: []
       }
 
+      constructor (state){
+        super(state);
+        this.state = {
+            slug: this.state.match.params.person.slug,
+            defaultBcg
+        };
+    }
+    
       componentDidMount() {
-        axios.get(`http://localhost:4000/api/rooms`)
+        axios.get(`http://34.226.202.240:4000/api/rooms`)
           .then(res => {
             const persons = res.data;
             console.log(res.data);
@@ -29,12 +29,11 @@ export default class SingleRoom extends Component {
               console.error("tdfghkkjg")
           })
       }
-
-
     static contextType = RoomContext;
+
     render() {
         const { getRoom } = this.context;
-        const room = getRoom(this.state.slug);
+        const room = getRoom(this.state.person.slug);
         if(!room){
             return (<div className="container roomerror">
                     <div className="row my-5">
@@ -48,18 +47,13 @@ export default class SingleRoom extends Component {
                     </div>
                 </div>);
         }
-        const {name,description,capacity,size,price,extras,breakfast,pets,images} = room;
-        const [mainImg, ...defaultBcg] = images;
-
-        
+        // const {name,description,capacity,size,price,extras,breakfast,pets,images} = room;
+        // const [mainImg, ...defaultBcg] = images;
         return (
-
-         <>
-            { this.state.persons.map(person => 
-                  <div>
+            <>
             <StyledHero img={mainImg || this.state.defaultBcg }>
            
-            <Banner title={`${name} room`}>
+            <Banner title={`${person.name} room`}>
                     <Link to="/rooms" className="btn btn-primary">Back To Rooms</Link>
             </Banner>
             </StyledHero>
@@ -69,7 +63,7 @@ export default class SingleRoom extends Component {
                         return (
                         <div className="col-md-4 col-12 mx-auto" key={index}>
                             <div className="card border-0 shadow-lg">
-                               <img key={index} src={item} alt={name} className="img-fluid" />
+                               <img key={index} src={item} alt={person.name} className="img-fluid" />
                             </div>
                         </div>)
                     })}
@@ -81,7 +75,7 @@ export default class SingleRoom extends Component {
                    </article>
                    <article className="info">
                       <h3>Info</h3>
-                      <h6>price : €{person.price}</h6>
+                      <h6>price : Rs{person.price}</h6>
                       <h6>size  : {person.size} SQFT</h6>
                       <h6>
                           max capacity : {" "}
@@ -95,21 +89,18 @@ export default class SingleRoom extends Component {
             <section className="room-extras">
                 <h3>Extras</h3>
                 <ul className="extras">
-                    {extras.map((item,index) => {
+                    {person.extras.map((item,index) => {
                           return <li key={index}>{item}</li>
                     })}
                 </ul>
                 <div className="p-4 clearfix">
                     <div className="row">
                        <div className="col-md-3 col-12 ml-auto">
-                          <Link to={`/booknow/${this.state.person.slug}`} className="btn btn-outline-primary btn-block btn-lg float-right ">Book Now</Link>
+                          <Link to={`/booknow/${this.state.slug}`} className="btn btn-outline-primary btn-block btn-lg float-right ">Book Now</Link>
                        </div>
                     </div>
                 </div>
             </section>
-            </div>
-
-        )}
             </>
             
         )
