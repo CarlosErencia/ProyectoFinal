@@ -21,25 +21,24 @@ export default class PersonList extends React.Component {
 
   render() {
     return (
-      <ul>
+      <section class="container">
+        <div class="row my-5">
         { this.state.persons.map(person => 
-                  <div>
-                  <div className="col-md-4 col-12 mx-auto p-2">
-                  <div className="card shadow-lg border-0 room">
-                  <img width="450" src={person.images} alt="single room" className="img-fluid"/>
-                      <div className="price-top">
-                          <h6>{person.price}€</h6>
-                          <p>la noche</p>
-                      </div>
-                      <Link to={`/rooms/${person.slug}`} className="btn-warning room-link text-center" >Mas Informacion</Link>
-                    <p className="room-info">{person.name}</p>
-                  </div>
-              </div>
-              </div>
-
-        )}
        
-      </ul>
+          <div className="col-md-4 col-12 mx-auto p-2">
+            <div className="card shadow-lg border-0 room">
+              <img width="400" src={person.images} alt="single room" className="img-fluid"/>
+              <div className="price-top">
+                  <h6>{person.price}€</h6>
+                  <p>la noche</p>
+              </div>
+              <Link to={`/rooms/${person.slug}`} className="btn-warning room-link text-center" >Mas Informacion</Link>
+              <p className="room-info">{person.name}</p>
+            </div>
+          </div>
+        )}
+        </div>       
+      </section>
     )
   }
 }
