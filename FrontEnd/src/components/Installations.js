@@ -31,7 +31,7 @@ export default class Servicios extends Component {
                         <div className="card shadow-lg border-0 p-4">
                             <article className="service">
                             <div>
-                              <img width="250" src={person.image}></img>
+                              <img width="400" src={person.image}></img>
                             </div>
                             <strong><h4>{person.name}</h4></strong>
                             <p>{person.description}</p>
