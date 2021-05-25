@@ -14,7 +14,7 @@ var express = require('express'),
 //Las rutas de nuestra aplicación estan definidas en el directorio routes, en el fichero todos.js
 var roomRoutes = require("./routes/rooms");
 var installationRoutes = require("./routes/installation");
-var serviceRoutes = require("./routes/services");
+var serviceRoutes = require("./routes/service");
 var restaurantRoutes = require("./routes/restaurant");
 
 //Configuración de middleware de Express

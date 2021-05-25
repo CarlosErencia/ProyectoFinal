@@ -16,7 +16,7 @@ var helpers = require("../helpers/services");
  .post(helpers.createService)
  
 
- router.route('/:servicesId')
+ router.route('/:serviceId')
   .get(helpers.getService)
   .put(helpers.updateService)
   .delete(helpers.deleteService)

@@ -9,3 +9,4 @@ mongoose.Promise = Promise;
 module.exports.Room = require("./room");
 module.exports.Service = require("./service");
 module.exports.Installation = require("./installation");
+module.exports.Restaurant = require("./restaurant");

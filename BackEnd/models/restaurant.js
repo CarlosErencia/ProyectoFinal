@@ -39,7 +39,7 @@ var restaurantSchema = new mongoose.Schema({
 //de la colección que tendrá en Mongo (el nombre de la base la 'tabla')
 
 
-var Restaurant= mongoose.model('Restaurant', restaurantSchema, 'Restaurant');
+var Restaurant = mongoose.model('Restaurant', restaurantSchema, 'Restaurant');
 
 
 module.exports = Restaurant;

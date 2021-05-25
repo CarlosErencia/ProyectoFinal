@@ -13,8 +13,8 @@ exports.getInstallations = function(req, res){
 
 exports.createInstallation = function(req, res){
   db.Installation.create(req.body)
-  .then(function(newService){
-      res.status(201).json(newService);
+  .then(function(newInstallation){
+      res.status(201).json(newInstallation);
   })
   .catch(function(err){
       res.send(err);
