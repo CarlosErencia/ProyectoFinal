@@ -11,7 +11,7 @@ import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
-import Booknow from './pages/Booknow';
+import Booknow from './pages/Booknow2';
 
 function App() {
     return ( 
