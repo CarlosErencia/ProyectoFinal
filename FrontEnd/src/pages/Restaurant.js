@@ -31,8 +31,8 @@ export default class Restaurant extends Component {
         return (
             <>
             <StyledHero img={this.state.info.image}>
-            <Banner title={`${this.state.info.name} room`}>
-                    <Link to="/" className="btn btn-primary">Back To Home</Link>
+            <Banner title={`${this.state.info.name}`}>
+                    <Link to="/" className="btn btn-primary">Volver a Home</Link>
             </Banner>
             </StyledHero>
             <section className="single-room container">

@@ -741,3 +741,11 @@ textarea{
 .foto{
     height: 350px;
 }
+
+.markcolor{
+    background-color: #FF6565;
+}
+
+.precio{
+    font-size: x-large;
+}

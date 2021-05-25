@@ -34,7 +34,7 @@ export default class Servicios extends Component {
                           <div class="card-body">
                             <strong class="card-text"><h4>{person.name}</h4></strong>
                             <p class="card-text">{person.description}</p>
-                            <Link to={`/restaurant/${person._id}`} className="btn btn-primary" >Mas Informacion</Link>
+                            <Link to={`/restaurant/${person._id}`} className="btn btn-block btn-outline-primary" >Mas Informacion</Link>
                           </div>              
                        </div>
                     </div>

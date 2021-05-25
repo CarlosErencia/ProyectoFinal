@@ -32,8 +32,8 @@ export default class SingleRoom extends Component {
             <>
             <StyledHero img={this.state.persons.images}>
            
-            <Banner title={`${this.state.persons.name} room`}>
-                    <Link to="/rooms" className="btn btn-primary">Back To Rooms</Link>
+            <Banner title={`${this.state.persons.name}`}>
+                    <Link to="/rooms" className="btn btn-primary">Volver a Habitaciones</Link>
             </Banner>
             </StyledHero>
             <section className="single-room container">
@@ -41,31 +41,31 @@ export default class SingleRoom extends Component {
                </div>
                <div className="single-room-info">
                    <article className="desc">
-                      <h3>Details</h3>
+                      <h3>Detalles</h3>
                       <p>{this.state.persons.description}</p>
                    </article>
                    <article className="info">
-                      <h3>Info</h3>
-                      <h6>price : € {this.state.persons.price}</h6>
-                      <h6>size  : {this.state.persons.size} M2</h6>
+                      <h3>Informacion</h3>
+                      <h6>Precio : {this.state.persons.price}€</h6>
+                      <h6>Tamaño  : {this.state.persons.size} M2</h6>
                       <h6>
-                          max capacity : {" "}
-                              {this.state.persons.capacity > 1 ? `${this.state.persons.capacity} people`: `${this.state.persons.capacity} person`}
+                          Max: {" "}
+                              {this.state.persons.capacity > 1 ? `${this.state.persons.capacity} personas`: `${this.state.persons.capacity} persona`}
                       </h6>
-                      <h6>{this.state.persons.pets? 'pets allowed': 'no pets allowed'}</h6>
-                      <h6>{this.state.persons.breakfast && "free breakfast included"}</h6>
+                      <h6>{this.state.persons.pets? 'Se permiten animales': 'No se permiten animales'}</h6>
+                      <h6>{this.state.persons.breakfast && "Desayuno Incluido"}</h6>
                    </article>
                </div>
             </section>
             <section className="room-extras">
                 <h3>Extras</h3>
                 <ul className="extras">
-                    <p>{this.state.persons.extras}</p>
+                    <p>- {this.state.persons.extras}</p>
                 </ul>
                 <div className="p-4 clearfix">
                     <div className="row">
                        <div className="col-md-3 col-12 ml-auto">
-                          <Link to={`/booknow/${this.state._id}`} className="btn btn-outline-primary btn-block btn-lg float-right ">Book Now</Link>
+                          <Link to={`/booknow/${this.state._id}`} className="btn btn-outline-primary btn-block btn-lg float-right ">Reserva Ahora</Link>
                        </div>
                     </div>
                 </div>

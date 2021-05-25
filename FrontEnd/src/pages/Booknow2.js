@@ -52,41 +52,41 @@ export default class Booknow extends Component {
     render() {
       
         const { startDate, endDate } = this.state;
-        const daysLeft = this.calculateDaysLeft(startDate, endDate);
+        const daysLeft = 1 + this.calculateDaysLeft(startDate, endDate);
         return (
         <div className="container my-5">
             <div className="row espacioTop">
                 <div className="col-md-10 mx-auto col-12 card shadow-lg border-0 p-4">
                     <div>
-                        <h1 className="display-4">Booking</h1>
+                        <h1 className="display-4">Reserva</h1>
                     </div>
                     <div className="row">
                         <div className="col-md-6 col-12 my-auto">
                             <img src={this.state.persons.images} className="img-fluid" alt="selected room" />
                         </div>
                         <div className="col-md-6 col-12 my-auto">
-                            <h1>Rooms Details</h1>
+                            <h1>Detalles de la Habitacion</h1>
                             <table className="table">
                                 <thead className="thead-light">
                                     <tr>
-                                        <th>Room Type</th>
+                                        <th>Tipo Habitacion</th>
                                         <td>{this.state.persons.name}</td>
                                     </tr>
                                     <tr>
-                                        <th>Capacity</th>
+                                        <th>Max Personas</th>
                                         <td>{this.state.persons.capacity}</td>
                                     </tr>
                                     <tr>
-                                        <th>Size</th>
+                                        <th>Tamaño</th>
                                         <td>{this.state.persons.size} M2.</td>
                                     </tr>
                                     <tr>
-                                        <th>Breakfast</th>
-                                        <td>{this.state.persons.breakfast === true ? `Included`: `Not Included`}</td>
+                                        <th>Desayuno</th>
+                                        <td>{this.state.persons.breakfast === true ? `Incluido`: `No Incluido`}</td>
                                     </tr>
                                     <tr>
-                                        <th>Pets</th>
-                                        <td>{this.state.persons.pets ===true ? `Allowed` : `Not Allowed`}</td>
+                                        <th>Animales</th>
+                                        <td>{this.state.persons.pets ===true ? `Permitidos` : `No Permitidos`}</td>
                                     </tr>
                                 </thead>
                             </table>
@@ -95,42 +95,44 @@ export default class Booknow extends Component {
                     <div className="row my-3">
                         <div className="col-md-6 col-12">
                             <div className="form-group">
-                                <label htmlFor="Fromdate" className="font-weight-bolder mr-3">From Date </label>
+                                <label htmlFor="Fromdate" className="font-weight-bolder mr-3">Desde el:</label>
                                 <DatePicker selected={this.state.startDate} onChange={this.handleChangeStart} className="form-control" />
                             </div>
                         </div>
                         <div className="col-md-6 col-12">
                             <div className="form-group">
-                                <label htmlFor="Todate" className="font-weight-bolder mr-3">To Date </label>
+                                <label htmlFor="Todate" className="font-weight-bolder mr-3">Hasta el: </label>
                                 <DatePicker selected={this.state.endDate} onChange={this.handleChangeEnd} className="form-control" />
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-6 col-12">
-                            <h6 className="font-weight-bolder">Number of days : {daysLeft}</h6>
-                            <mark>Please make sure Checkin time is from 9 am to 12 pm</mark>
+                            <h6 className="font-weight-bolder">Numero de dias : {daysLeft}</h6>
+                            <mark>El horario del Check-In es de 9:00H a 12:00H</mark>
+                            <br/>
+                            <mark className="markcolor">El Chek-Out es hasta las 11:00H</mark>
                         </div>
                         <div className="col-md-6 col-12">
-                            <h6 className="font-weight-bold">Price per day : <span className="badge badge-info">{this.state.persons.price} €</span></h6>
-                            <h6 className="font-weight-bold">Total Price to be paid : <span className="text-primary">{daysLeft*this.state.persons.price} €</span></h6>
+                            <h6 className="font-weight-bold">Pricio por noche : <span className="badge badge-info precio">{this.state.persons.price} €</span></h6>
+                            <h6 className="font-weight-bold">Precio Total : <span className="text-primary precio">{daysLeft*this.state.persons.price} €</span></h6>
                         </div>
                     </div>
                     <div className="row my-4">
                         <div className="col-md-6 col-12">
                             <div className="form-group">
-                                <label htmlFor="payment" className="font-weight-bolder">Payment Options</label>
+                                <label htmlFor="payment" className="font-weight-bolder">Metodos de Pago</label>
                                 <select className="form-control">
-                                    <option disabled>Select payment option</option>
-                                    <option value="Credit">Credit Card</option>
-                                    <option value="Debit">Debit Card</option>
-                                    <option value="checkin">Pay during Checkin</option>
+                                    <option disabled>Selecciona el metodo de pago</option>
+                                    <option value="Credit">Tarjeta de Credito</option>
+                                    <option value="Debit">Tarjeta de Debito</option>
+                                    <option value="checkin">Pagar en el Check-In</option>
                                 </select>
                             </div>
                         </div>
                         <div className="col-md-6 col-12 my-auto">
                             <div className="col-md-6 col-12 float-right">
-                                <button className="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#thanks">Confirm Booking</button>
+                                <button className="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#thanks">Confirmar Reserva</button>
                             </div>
                         </div>
                     </div>
@@ -140,12 +142,12 @@ export default class Booknow extends Component {
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-body p-4">
-                            <h3>Thank you </h3>
-                            <p className="lead">Your room is booked successfully....</p>
+                            <h3>Gracias</h3>
+                            <p className="lead">Su habitacion se ha reservado correctamente....</p>
                         </div>
                         <div className="modal-footer">
-                            <Link to="/" className="btn btn-dark">Goto Home</Link>
-                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <Link to="/" className="btn btn-dark">Volver a Home</Link>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
