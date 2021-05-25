@@ -12,6 +12,7 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import Booknow from './pages/Booknow2';
+import Restaurant from './pages/Restaurant';
 
 function App() {
     return ( 
@@ -25,12 +26,16 @@ function App() {
             component = { Contact }/> 
             <Route exact path = "/login"
             component = { Login }/>
+            <Route exact path = "/logout"
+            component = { Login }/>
             <Route exact path = "/rooms/"
             component = { Rooms }/>
             <Route exact path = "/rooms/:_id"
             component = { SingleRoom }/>
             <Route exact path = "/booknow/:_id"
             component = { Booknow }/>
+            <Route exact path = "/restaurant/:_id"
+            component = { Restaurant }/>
             <Route component = { Error }/>
             </Switch>
             <Footer/>

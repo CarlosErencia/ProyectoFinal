@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-//import defaultImg from 'src/images/room-1.jpeg';
+import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 import Title from './Title'
 
@@ -22,20 +22,20 @@ export default class Servicios extends Component {
 
   render() {
     return (
-        <div className="container-fluid services">
+      
+        <div className="container-fluid restaurant">
          <Title title="Restaurantes" />
             <div className="row">
                {this.state.persons.map((person, index) => {
                   return(
                     <div className="col-md-4 col-lg-3 col-12 mx-auto my-3" key={index}>
-                        <div className="card shadow-lg border-0 p-4">
-                            <article className="service">
-                            <div>
-                              <img width="400" src={person.image}></img>
-                            </div>
-                            <strong><h4>{person.name}</h4></strong>
-                            <p>{person.description}</p>
-                            </article>              
+                        <div className="card">
+                          <img class="card-img-top foto" src={person.image} alt="Card image cap"></img>
+                          <div class="card-body">
+                            <strong class="card-text"><h4>{person.name}</h4></strong>
+                            <p class="card-text">{person.description}</p>
+                            <Link to={`/restaurant/${person._id}`} className="btn btn-primary" >Mas Informacion</Link>
+                          </div>              
                        </div>
                     </div>
                   )

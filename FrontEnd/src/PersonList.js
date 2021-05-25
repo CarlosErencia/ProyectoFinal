@@ -27,7 +27,7 @@ export default class PersonList extends React.Component {
        
           <div className="col-md-4 col-12 mx-auto p-2">
             <div className="card shadow-lg border-0 room">
-              <img width="400" src={person.images} alt="single room" className="img-fluid"/>
+              <img src={person.images} alt="single room" className="img-fluid foto"/>
               <div className="price-top">
                   <h6>{person.price}€</h6>
                   <p>la noche</p>

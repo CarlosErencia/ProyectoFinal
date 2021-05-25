@@ -50,28 +50,12 @@ export default class Booknow extends Component {
     }
     static contextType = RoomContext;
     render() {
-        // const { getRoom } = this.context;
-        // const room = getRoom(this.state._id);
+      
         const { startDate, endDate } = this.state;
         const daysLeft = this.calculateDaysLeft(startDate, endDate);
-    // if(!room){
-    //     return (<div className="container roomerror">
-    //         <div className="row my-5">
-    //             <div className="col-md-6 col-12 mx-auto">
-    //                 <div className="card shadow-lg border-0 p-4 error">
-    //                     <h1 className="text-center display-4">SORRY</h1>
-    //                     <h3>No such room could be found...</h3>
-    //                     <Link to="/rooms" className="btn btn-warning mt-4 ">Back to Rooms</Link>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>);
-    //     }
-        // const {name,capacity,size,price,breakfast,pets,images} = room;
-        // const [mainImg, ...defaultBcg] = images;
         return (
         <div className="container my-5">
-            <div className="row">
+            <div className="row espacioTop">
                 <div className="col-md-10 mx-auto col-12 card shadow-lg border-0 p-4">
                     <div>
                         <h1 className="display-4">Booking</h1>

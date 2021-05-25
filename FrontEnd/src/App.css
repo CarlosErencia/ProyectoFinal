@@ -383,7 +383,7 @@ input[type=number]:focus,
 /* room */
 
 .room {
-    transition: 0.4s linear;
+    transition: 0.2s linear;
     -webkit-transition: 0.4s linear;
     -moz-transition: 0.4s linear;
     -ms-transition: 0.4s linear;
@@ -733,4 +733,11 @@ textarea{
     display: flex;
 }
 
+.restaurant{
+   background-color: #fff; 
+   text-align: center;
+}
 
+.foto{
+    height: 350px;
+}

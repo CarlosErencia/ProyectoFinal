@@ -28,12 +28,12 @@ export default class Servicios extends Component {
                {this.state.persons.map((person, index) => {
                   return(
                     <div className="col-md-4 col-lg-3 col-12 mx-auto my-3" key={index}>
-                        <div className="card shadow-lg border-0 p-4">
-                            <article className="service">
-                            <img width="250" src={person.image}></img>
-                            <h6>{person.name}</h6>
-                            <p>{person.description}</p>
-                            </article>              
+                        <div className="card">
+                          <img class="card-img-top foto" src={person.image} alt="Card image cap"></img>
+                          <div class="card-body">
+                            <strong class="card-text"><h4>{person.name}</h4></strong>
+                            <p class="card-text">{person.description}</p> 
+                          </div>              
                        </div>
                     </div>
                   )
