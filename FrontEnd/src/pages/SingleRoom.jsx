@@ -12,6 +12,7 @@ export default class SingleRoom extends Component {
             slug: this.props.match.params.slug,
             defaultBcg
         };
+        console.log(props);
     }
     static contextType = RoomContext;
     render() {

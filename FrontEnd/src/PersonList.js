@@ -32,7 +32,7 @@ export default class PersonList extends React.Component {
                   <h6>{person.price}€</h6>
                   <p>la noche</p>
               </div>
-              <Link to={`/rooms/${person.slug}`} className="btn-warning room-link text-center" >Mas Informacion</Link>
+              <Link to={`/rooms/${person._id}`} className="btn-warning room-link text-center" >Mas Informacion</Link>
               <p className="room-info">{person.name}</p>
             </div>
           </div>
