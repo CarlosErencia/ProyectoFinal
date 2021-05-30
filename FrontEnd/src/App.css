@@ -5,7 +5,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-//Aquest es el css general del nostre projecte, aquest css consta de totes les clases a les quals se l'hi ha implementat algun tipus de estil etc.
+/* Aquest es el css general del nostre projecte, aquest css consta de totes les clases a les quals se l'hi ha implementat algun tipus de estil etc. */
 
 * {
     margin: 0;
