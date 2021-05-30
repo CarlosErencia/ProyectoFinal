@@ -1,3 +1,4 @@
+//Aquest fitxer es el js principal on es tan tots els imports del projecte, components i pàgines
 import React from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
