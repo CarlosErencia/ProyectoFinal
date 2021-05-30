@@ -1,3 +1,4 @@
+//fichero pagina contacto que llama componentes
 import React from 'react'
 import Mapa from '../components/Mapa'
 import FormContacto from '../components/FormContacto'
