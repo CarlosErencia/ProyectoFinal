@@ -1,3 +1,4 @@
+//Muestra restaurantes en concreto/solitario cuando le das a mas info en la pagina
 import React, { Component } from 'react'
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
