@@ -55,7 +55,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 localhost: [http://localhost:3000](http://localhost:3000)
 
-amazon: [http://34.226.202.240:4000/](http://34.226.202.240:4000)
+amazon: [http://34.226.202.240:3000/](http://34.226.202.240:3000)
 
 ## Jira
 
