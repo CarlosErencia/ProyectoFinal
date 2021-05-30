@@ -3,6 +3,8 @@ import { Map, TileLayer } from "react-leaflet";
 import data from "../assets/data.json";
 import Markers from "./VenueMarkers";
 
+// Aquest el fitxer on es veu la vista del mapa de Google que el crida el /pages/Contact.jsx
+
 import { useLocation, useHistory } from "react-router-dom";
 
 import "leaflet/dist/leaflet.css";
