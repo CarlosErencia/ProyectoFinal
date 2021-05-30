@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './style/FormContacto.css';
 
+// Aquest fitxer que conte el formulari que crida el /pages/Contacto.jsx
+
 const FormContacto = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
