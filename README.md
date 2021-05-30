@@ -72,3 +72,31 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify.
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+
+
+
+# Documentació tècnica
+
+##Projecte funcional
+
+localhost [http://localhost:3000](http://localhost:3000)
+
+amazon: [http://34.226.202.240:4000/](http://34.226.202.240:4000)
+
+##Jira
+
+http://labs.iam.cat:8080/secure/RapidBoard.jspa?rapidView=87&projectKey=DAWSIN6
+
+##Explicació
+
+El nostre projecte està dividit en dues parts, frontend y backend.
+
+Tenim dues carpetes generals, una per al frontend y un altre per backend.
+
+A la carpeta del front tenim tota la página y a la del back només tenim la api
+
+Per iniciar tot el projecte sencer em de fer `npm start tant` a la carpeta del frontend com la del backend
+
