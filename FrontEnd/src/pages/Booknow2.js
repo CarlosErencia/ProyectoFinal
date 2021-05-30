@@ -1,3 +1,4 @@
+//fichero reserva habitacion
 import React, { Component } from 'react'
 import { RoomContext } from '../context';
 import { Link } from 'react-router-dom';
