@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import Title from './Title'
 
+// // Aqui tenim una trucada a axios per la part de Restaurants, aquest fitxer el crida el /pages/Home.jsx
+
 export default class Servicios extends Component {
   state = {
     persons: []
