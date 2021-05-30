@@ -1,3 +1,4 @@
+//Fitxer js en el qual s'importa el axios per tal de fer una consulta a la nostra api d'habitacions que está sustentada per la màquina de AWS i a un return amb les habitacions i un format establert
 import React from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
