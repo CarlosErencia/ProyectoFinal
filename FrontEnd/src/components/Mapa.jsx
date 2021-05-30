@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper , InfoWindow, Marker} from 'google-maps-react';
 
-// Aquest el fitxer on esta el mapa de Google que el crida el /pages/Contact.jsx
+// Aquest el fitxer on esta les opcions del mapa (zoom, moure, allunyar-se, etc.) que el crida el /pages/Contact.jsx
 
 const mapStyles = {
   width: '50%',
