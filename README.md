@@ -63,9 +63,9 @@ http://labs.iam.cat:8080/secure/RapidBoard.jspa?rapidView=87&projectKey=DAWSIN6
 
 ## Explicació
 
-El nostre projecte està dividit en dues parts, frontend y backend.
+El nostre projecte està dividit en dues parts, frontend i backend.
 
-Tenim dues carpetes generals, una per al frontend y un altre per backend.
+Tenim dues carpetes generals, una per a cada cosa.
 
 A la carpeta del front tenim tota la página y a la del back només tenim la api
 
