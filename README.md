@@ -102,19 +102,19 @@ Per iniciar tot el projecte sencer em de fer `npm start tant` a la carpeta del f
 
 ### Frontend
 
-Dins del front tenim dues carpetes: public y src. A més fora d'aquetes carpetes hi ha fitxers generals y també hi ha alguns que no els fem servir pero ens vam olvidar de borrar, com per exemple el data.js.
+Dins del front tenim dues carpetes: `public y src`. A més fora d'aquetes carpetes hi ha fitxers generals y també hi ha alguns que no els fem servir pero ens vam olvidar de borrar, com per exemple el data.js.
 
-Al src hi ha tres carpetes més: components, pages i images, aquesta ùltima tampoc la fem servir (agafem les imatges de la api).
+Al `src` hi ha tres carpetes més: components, pages i images, aquesta ùltima tampoc la fem servir (agafem les imatges de la api).
 
-A la carpeta de pages el que hi ha son els fitxers amb les pàgines generals (básiques) y el que fan es trucar als components de l'altra carpeta per fer la página completa.
+A la carpeta de `pages` el que hi ha son els fitxers amb les pàgines generals (básiques) y el que fan es trucar als `components` de l'altra carpeta per fer la página completa.
 
 ### Backend
 
-Dins del back tenim tres carpetes: helpers, models, routes i un index.js amb express y definció de rutas.
+Dins del back tenim tres carpetes: `helpers, models, routes` i un index.js amb express y definció de rutas.
 
-Al helpers el que hi ha son els cruds de la api.
+* `Helpers`Al helpers el que hi ha son els cruds de la api.
 
-Al models definim la estructura de dades.
+* `Models`Al models definim la estructura de dades.
 
-Al routes definim les routes per utilitzar el crud.
+* `Routes`Al routes definim les routes per utilitzar el crud.
 
