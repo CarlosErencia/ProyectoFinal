@@ -1,3 +1,4 @@
+//JS en el cual apliquem al index principal, el nostre component de auth0providerwithHistory
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
