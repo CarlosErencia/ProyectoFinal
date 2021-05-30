@@ -1,3 +1,4 @@
+//pagina de la habitacion en concreto/solitario que llama a la api y muestra datos
 import React, { Component } from 'react'
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
