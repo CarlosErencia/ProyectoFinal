@@ -1,3 +1,4 @@
+//pagina de habitaciones que llama componentes
 import React from 'react'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner';
