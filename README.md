@@ -89,3 +89,20 @@ Dins del back tenim tres carpetes: `helpers, models, routes` i un index.js amb e
 
 * `Routes`Al routes definim les routes per utilitzar el crud.
 
+### /docs
+
+A la carpeta de /docs ens trobarem la seguent documentacio del projecte: 
+
+* `Carpeta Moqups` amb els diagrames
+
+* `Video DEMO` del projecte
+
+* `Manual d'USUARI`
+
+* `Video PITCH`
+
+* `Presentacio RESUM`
+
+* `Presentacio COMERCIAL`
+
+* `Presentacio TECNICA`
