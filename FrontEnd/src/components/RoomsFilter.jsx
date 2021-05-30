@@ -3,6 +3,9 @@ import {useContext} from 'react'
 import {RoomContext} from '../context';
 import Title from '../components/Title';
 //to get all unique value
+
+// El roomfilter simplement es el fitxer que s'encarrega de filtrar les habitacions del fitxer PersonList.js segons els parametres que li indiquem, aquest fitxer el crida el RoomContainer.jsx 
+
 const getUnique = (items,value) => {
 return [...new Set(items.map(item => item[value]))]
 }
