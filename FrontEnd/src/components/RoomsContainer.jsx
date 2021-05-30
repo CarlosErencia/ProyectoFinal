@@ -4,6 +4,7 @@ import { withRoomConsumer } from '../context';
 import Loading from './Loading';
 import PersonList from '../../src/PersonList'
 
+// El roomcontainer es el fitxer que fa la crida del personlist (on esta la llista de totes les habitacions) i el filtrat de les habitacions.
 
 function RoomsContainer({context}){
     const{loading,sortedRooms,rooms} = context;
